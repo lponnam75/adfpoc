@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "twitter_handles.parquet",
 				"folderPath": "Twitter",
 				"container": "raw"
 			},
