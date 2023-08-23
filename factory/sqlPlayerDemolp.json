@@ -1,0 +1,9 @@
+{
+	"name": "sqlPlayerDemolp",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ee34b208-1ef3-487b-846a-d182fd0db3fe",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
