@@ -1,0 +1,122 @@
+{
+    "manifestVersion": 1,
+    "id": "DataFactoryTools",
+    "name": "Deploy Azure Data Factory (#adftools)",
+    "version": "1.30.0000",
+    "publisher": "SQLPlayer",
+    "description": "Tools for deploying entire ADF code (JSON files) to ADF instance",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "tags": [
+        "Extension",
+        "Marketplace",
+        "DevOps",
+        "Deploy",
+        "Release",
+        "Azure Data Factory",
+        "Continuous Delivery",
+        "Build",
+        "Release"
+      ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "license"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/Azure-Player/azure.datafactory.devops"
+    },
+    "links": {
+        "support": {
+            "uri": "https://github.com/Azure-Player/azure.datafactory.devops/issues"
+        },
+        "getstarted": {
+            "uri": "https://azureplayer.net/adftools/"
+        },
+        "learn": {
+            "uri": "https://github.com/Azure-Player/azure.datafactory.tools/discussions"
+        },
+        "privacypolicy": {
+            "uri": "https://azureplayer.net/privacy/"
+        }
+    },
+    "icons": {
+        "default": "images/logo512.png"        
+    },
+    "screenshots": [
+        {
+            "path": "images/mini.png"
+        }
+    ],
+    "public": true,
+    "files": [
+        {
+            "path": "deployDataFactoryTask"
+        },
+        {
+            "path": "buildDataFactoryTask"
+        },
+        {
+            "path": "testLinkedServiceTask"
+        },
+        {
+            "path": "deployAdfFromArmTask"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "PublishADF",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "deployDataFactoryTask"
+            }
+        }
+        ,{
+            "id": "BuildADF",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildDataFactoryTask"
+            }
+        }
+        ,{
+            "id": "TestADFLS",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "testLinkedServiceTask"
+            }
+        }
+        ,{
+            "id": "DeployADFFromArm",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "deployAdfFromArmTask"
+            }
+        }
+    ]
+}
