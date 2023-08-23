@@ -1,0 +1,49 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Twitter",
+				"container": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Rank",
+				"type": "INT64"
+			},
+			{
+				"name": "Change",
+				"type": "UTF8"
+			},
+			{
+				"name": "Account name",
+				"type": "UTF8"
+			},
+			{
+				"name": "Owner",
+				"type": "UTF8"
+			},
+			{
+				"name": "Followers",
+				"type": "INT64"
+			},
+			{
+				"name": "Activity",
+				"type": "UTF8"
+			},
+			{
+				"name": "Country",
+				"type": "UTF8"
+			}
+		]
+	}
+}
