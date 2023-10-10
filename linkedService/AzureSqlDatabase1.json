@@ -14,7 +14,7 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=@{linkedService().servername};initial catalog=@{linkedService().dbname};user id=sqladmin",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENFQzdFNUFBLUJEM0MtNEU1Ri1BNTA3LUZDOEI5MzMzODM3Rl9iOTY0MTk1ZC1jOGYxLTQwYTMtYmJhOC1iMWMwZjQyMzY5ZWIiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENFQzdFNUFBLUJEM0MtNEU1Ri1BNTA3LUZDOEI5MzMzODM3Rl84OTFjNWI5Ny0xYTMyLTRlZGYtYmE2Ni05ZGE2Yzc0ZGRiZTgiDQp9"
 		}
 	}
 }
