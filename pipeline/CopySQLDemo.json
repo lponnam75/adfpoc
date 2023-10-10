@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "dbname"
+					},
+					{
+						"name": "servername"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "ParquetSource",
@@ -141,6 +148,14 @@
 				]
 			}
 		],
+		"parameters": {
+			"dbanme": {
+				"type": "string"
+			},
+			"servername": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
