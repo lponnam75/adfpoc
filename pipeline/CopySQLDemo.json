@@ -13,14 +13,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "dbname"
-					},
-					{
-						"name": "servername"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"source": {
 						"type": "ParquetSource",
@@ -143,17 +136,29 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"dbname": {
+								"value": "@pipeline().parameters.dbanme",
+								"type": "Expression"
+							},
+							"servername": {
+								"value": "@pipeline().parameters.servername",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
 		"parameters": {
 			"dbanme": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "pvlab-6f1fcd-sqldb"
 			},
 			"servername": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "pvlab-6f1fcd-sqlsvr.database.windows.net"
 			}
 		},
 		"annotations": []
