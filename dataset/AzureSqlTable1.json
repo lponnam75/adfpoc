@@ -3,7 +3,25 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"serverName": {
+					"value": "@dataset().ServerNamefromdataset\r\n",
+					"type": "Expression"
+				},
+				"dbName": {
+					"value": "@dataset().dbNamefromdataset",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"ServerNamefromdataset": {
+				"type": "String"
+			},
+			"dbNamefromdataset": {
+				"type": "String"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
