@@ -136,11 +136,31 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"ServerNamefromdataset": {
+								"value": "@pipeline().parameters.ServerName",
+								"type": "Expression"
+							},
+							"dbNamefromdataset": {
+								"value": "@pipeline().parameters.dbName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"ServerName": {
+				"type": "String",
+				"defaultValue": "pvlab-6f1fcd-sqlsvr.database.windows.net"
+			},
+			"dbName": {
+				"type": "String",
+				"defaultValue": "pvlab-6f1fcd-sqldb"
+			}
+		},
 		"annotations": []
 	}
 }
