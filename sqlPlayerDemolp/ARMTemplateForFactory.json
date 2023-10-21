@@ -174,14 +174,32 @@
 							{
 								"referenceName": "AzureSqlTable1",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"ServerNamefromdataset": {
+										"value": "@pipeline().parameters.ServerName",
+										"type": "Expression"
+									},
+									"dbNamefromdataset": {
+										"value": "@pipeline().parameters.dbName",
+										"type": "Expression"
+									}
+								}
 							}
 						]
 					}
 				],
 				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
+					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"ServerName": {
+						"type": "String",
+						"defaultValue": "pvlab-6f1fcd-sqlsvr.database.windows.net"
+					},
+					"dbName": {
+						"type": "String",
+						"defaultValue": "pvlab-6f1fcd-sqldb"
+					}
 				},
 				"annotations": []
 			},
@@ -197,7 +215,25 @@
 			"properties": {
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"serverName": {
+							"value": "@dataset().ServerNamefromdataset\r\n",
+							"type": "Expression"
+						},
+						"dbName": {
+							"value": "@dataset().dbNamefromdataset",
+							"type": "Expression"
+						}
+					}
+				},
+				"parameters": {
+					"ServerNamefromdataset": {
+						"type": "String"
+					},
+					"dbNamefromdataset": {
+						"type": "String"
+					}
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -320,6 +356,14 @@
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"parameters": {
+					"serverName": {
+						"type": "string"
+					},
+					"dbName": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "AzureSqlDatabase",
 				"typeProperties": {
