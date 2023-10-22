@@ -47,10 +47,6 @@
 							"dbNamefromdataset": {
 								"value": "@pipeline().parameters.DbName",
 								"type": "Expression"
-							},
-							"SourceTable": {
-								"value": "@pipeline().parameters.SourceTable",
-								"type": "Expression"
 							}
 						}
 					}
