@@ -51,6 +51,10 @@
 							"SourceTable": {
 								"value": "@pipeline().parameters.SourceTable",
 								"type": "Expression"
+							},
+							"TargetTable": {
+								"value": "@pipeline().parameters.TargetTable",
+								"type": "Expression"
 							}
 						}
 					}
@@ -93,6 +97,24 @@
 			},
 			"DbName": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"ServerName": {
+				"type": "String",
+				"defaultValue": "pvlab-6f1fcd-sqlsvr.database.windows.net"
+			},
+			"DbName": {
+				"type": "String",
+				"defaultValue": "pvlab-6f1fcd-sqldb"
+			},
+			"SourceTable": {
+				"type": "String",
+				"defaultValue": "SalesLT.Customer"
+			},
+			"TargetTable": {
+				"type": "String",
+				"defaultValue": "SalesLT.Customer_target"
 			}
 		},
 		"annotations": []
