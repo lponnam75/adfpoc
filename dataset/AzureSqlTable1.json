@@ -21,6 +21,12 @@
 			},
 			"dbNamefromdataset": {
 				"type": "String"
+			},
+			"SourceTable": {
+				"type": "string"
+			},
+			"TargetTable": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
