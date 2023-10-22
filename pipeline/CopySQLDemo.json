@@ -165,7 +165,8 @@
 				"defaultValue": "pvlab-6f1fcd-sqldb"
 			},
 			"TableName": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "SalesLT.Customer"
 			}
 		},
 		"annotations": []
