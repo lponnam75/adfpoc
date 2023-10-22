@@ -51,10 +51,6 @@
 							"SourceTable": {
 								"value": "@pipeline().parameters.SourceTable",
 								"type": "Expression"
-							},
-							"TargetTable": {
-								"value": "@pipeline().parameters.TargetTable",
-								"type": "Expression"
 							}
 						}
 					}
@@ -86,10 +82,7 @@
 			}
 		],
 		"parameters": {
-			"SourceTable": {
-				"type": "string"
-			},
-			"TargetTable": {
+			"TableName": {
 				"type": "string"
 			},
 			"ServerName": {
