@@ -22,10 +22,7 @@
 			"dbNamefromdataset": {
 				"type": "String"
 			},
-			"SourceTable": {
-				"type": "string"
-			},
-			"TargetTable": {
+			"TableName": {
 				"type": "string"
 			}
 		},
