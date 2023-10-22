@@ -145,6 +145,10 @@
 							"dbNamefromdataset": {
 								"value": "@pipeline().parameters.dbName",
 								"type": "Expression"
+							},
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
 							}
 						}
 					}
@@ -159,6 +163,9 @@
 			"dbName": {
 				"type": "String",
 				"defaultValue": "pvlab-6f1fcd-sqldb"
+			},
+			"TableName": {
+				"type": "String"
 			}
 		},
 		"annotations": []
