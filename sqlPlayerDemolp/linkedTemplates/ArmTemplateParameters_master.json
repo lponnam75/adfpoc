@@ -20,9 +20,6 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://pvlab6f1fcdadls.dfs.core.windows.net/"
 		},
-		"trigger_eevent_properties_typeProperties_scope": {
-			"value": "/subscriptions/7606c763-2c66-4cf8-b77d-d6d25dfde607/resourceGroups/DataGeovernance-Demo-RG/providers/Microsoft.Storage/storageAccounts/pvlab6f1fcdadls"
-		},
 		"containerUri": {
 			"value": ""
 		},
