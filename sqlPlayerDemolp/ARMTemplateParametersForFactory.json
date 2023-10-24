@@ -19,6 +19,15 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://pvlab6f1fcdadls.dfs.core.windows.net/"
+		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_ServerName": {
+			"value": "pvlab-6f1fcd-sqlsvr.database.windows.net"
+		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_dbName": {
+			"value": "pvlab-6f1fcd-sqldb"
+		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_TableName": {
+			"value": "dbo.twitter"
 		}
 	}
 }

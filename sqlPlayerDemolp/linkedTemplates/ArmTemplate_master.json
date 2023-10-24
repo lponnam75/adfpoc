@@ -27,6 +27,18 @@
 			"type": "string",
 			"defaultValue": "https://pvlab6f1fcdadls.dfs.core.windows.net/"
 		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_ServerName": {
+			"type": "string",
+			"defaultValue": "pvlab-6f1fcd-sqlsvr.database.windows.net"
+		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_dbName": {
+			"type": "string",
+			"defaultValue": "pvlab-6f1fcd-sqldb"
+		},
+		"trigger_schedule_properties_CopySQLDemo_parameters_TableName": {
+			"type": "string",
+			"defaultValue": "dbo.twitter"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -68,6 +80,15 @@
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"trigger_schedule_properties_CopySQLDemo_parameters_ServerName": {
+						"value": "[parameters('trigger_schedule_properties_CopySQLDemo_parameters_ServerName')]"
+					},
+					"trigger_schedule_properties_CopySQLDemo_parameters_dbName": {
+						"value": "[parameters('trigger_schedule_properties_CopySQLDemo_parameters_dbName')]"
+					},
+					"trigger_schedule_properties_CopySQLDemo_parameters_TableName": {
+						"value": "[parameters('trigger_schedule_properties_CopySQLDemo_parameters_TableName')]"
 					}
 				}
 			},
