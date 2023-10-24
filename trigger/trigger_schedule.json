@@ -1,0 +1,29 @@
+{
+	"name": "trigger_schedule",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopySQLDemo",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"ServerName": "pvlab-6f1fcd-sqlsvr.database.windows.net",
+					"dbName": "pvlab-6f1fcd-sqldb",
+					"TableName": "dbo.twitter"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2023-10-24T16:15:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
