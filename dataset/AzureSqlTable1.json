@@ -12,6 +12,10 @@
 				"dbName": {
 					"value": "@dataset().dbNamefromdataset",
 					"type": "Expression"
+				},
+				"tablename": {
+					"value": "@dataset().TableName",
+					"type": "Expression"
 				}
 			}
 		},
