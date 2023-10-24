@@ -9,7 +9,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 30,
-				"startTime": "2023-10-22T10:06:00",
+				"startTime": "2023-10-22T10:10:00",
 				"endTime": "2023-10-23T23:00:00",
 				"timeZone": "Eastern Standard Time"
 			}
