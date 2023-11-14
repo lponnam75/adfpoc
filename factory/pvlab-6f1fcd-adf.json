@@ -1,0 +1,9 @@
+{
+	"name": "pvlab-6f1fcd-adf",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eb74ca49-0e10-44d2-b03a-c0841c6ef97e",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
