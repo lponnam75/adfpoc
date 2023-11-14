@@ -1,0 +1,12 @@
+{
+	"name": "linked-selfhosted",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/7606c763-2c66-4cf8-b77d-d6d25dfde607/resourcegroups/rg-adf-lp-poc/providers/Microsoft.DataFactory/factories/datafactory6p5575nt7nffy/integrationruntimes/Azure-Selfhosted",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

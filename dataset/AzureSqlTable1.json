@@ -3,45 +3,15 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"serverName": {
-					"value": "@dataset().ServerNamefromdataset\r\n",
-					"type": "Expression"
-				},
-				"dbName": {
-					"value": "@dataset().dbNamefromdataset",
-					"type": "Expression"
-				},
-				"tablename": {
-					"value": "@dataset().TableName",
-					"type": "Expression"
-				}
-			}
-		},
-		"parameters": {
-			"ServerNamefromdataset": {
-				"type": "String"
-			},
-			"dbNamefromdataset": {
-				"type": "String"
-			},
-			"TableName": {
-				"type": "string"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [
-			{
-				"name": "column_1",
-				"type": "int",
-				"precision": 10
-			}
-		],
+		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Twitter"
+			"table": "ErrorLog"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }
